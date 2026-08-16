@@ -1,0 +1,19 @@
+# OS / editor cruft
+desktop.ini
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Never publish credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

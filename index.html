@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andy Fu — Quantitative Research &amp; Finance</title>
+<meta name="description" content="Andy Fu (Fu Chi Leong) — incoming MSc Finance at HKUST. Portfolio of quantitative research tools, equity research, and simulation projects.">
+<meta name="author" content="Chi Leong Andy Fu">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Andy Fu — Quantitative Research &amp; Finance">
+<meta property="og:description" content="Incoming MSc Finance at HKUST. I build quantitative research tools — factor models, Monte Carlo simulators, and valuation engines.">
+<meta property="og:url" content="https://andyfuuu25.github.io/">
+<meta property="og:image" content="https://andyfuuu25.github.io/assets/img/headshot.jpg">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://andyfuuu25.github.io/">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22Georgia,serif%22>AF</text></svg>">
+<script>
+  // Applied before paint so the correct theme is up on first frame.
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top">Andy&nbsp;Fu</a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#work">Work</a></li>
+        <li class="is-optional"><a href="#experience">Experience</a></li>
+        <li class="is-optional"><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================ hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero__grid">
+      <div>
+        <span class="hero__eyebrow">Hong Kong</span>
+        <h1 class="hero__name">Chi Leong Andy Fu</h1>
+        <p class="hero__tagline">
+          Incoming MSc Finance at HKUST. I build quantitative research tools —
+          factor models, Monte Carlo simulators, and valuation engines.
+        </p>
+        <p class="hero__bio">
+          I came to finance from <strong>molecular biology</strong>, and that turns out to be a useful
+          place to start. Both disciplines are about the same problem: estimating something you
+          cannot observe directly, then being honest about the error bars. I write the code myself,
+          backtest it against reality, and document what the model cannot see. My work sits where
+          <strong>healthcare and biotech</strong> meet <strong>capital markets</strong> — where reading a
+          clinical trial readout and reading a cash flow statement are the same job.
+        </p>
+        <div class="actions">
+          <a class="btn btn--primary" href="mailto:andyfu2021@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            Email me
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/andy-fu-583a80264/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 21h5.16V9.5H2.4V21zM9.5 9.5h4.95v1.57h.07c.69-1.24 2.38-2.55 4.9-2.55 5.24 0 6.2 3.24 6.2 7.45V21h-5.15v-4.9c0-1.17-.02-2.68-1.7-2.68-1.7 0-1.96 1.28-1.96 2.6V21H9.5V9.5z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="https://github.com/andyfuuu25" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="btn" href="assets/files/Andy_Fu_CV.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg>
+            CV
+          </a>
+        </div>
+      </div>
+      <img class="hero__portrait" src="assets/img/headshot.jpg" width="640" height="640"
+           alt="Portrait of Chi Leong Andy Fu">
+    </div>
+  </section>
+
+  <!-- ======================================================= selected work -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__label">Selected work</span>
+        <h2 class="section__title">Things I built, and what they get right</h2>
+        <p class="section__intro">
+          Each of these is a full project rather than a tutorial exercise — real data, documented
+          assumptions, and a stated account of where the model breaks down.
+        </p>
+      </div>
+
+      <div class="projects">
+
+        <!-- Equity Research Desk -->
+        <article class="card reveal">
+          <div class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/andyfuuu25/equity-research-desk" target="_blank" rel="noopener">Equity Research Desk</a>
+            </h3>
+            <span class="card__kind">Full-stack · Quant</span>
+          </div>
+          <div class="card__body">
+            <p>
+              Type a ticker, get an analyst-style research profile in 8–15 seconds: a plain-English
+              business summary, forward catalysts sorted into confirmed / developing / risk, and a
+              <strong>five-factor quantitative score</strong> — all built on free data sources and free-tier APIs.
+            </p>
+          </div>
+          <ul class="card__points">
+            <li>
+              Factors come from the academic literature rather than invention: <strong>EBIT/EV</strong> (Greenblatt),
+              <strong>12-1 momentum</strong> (Jegadeesh &amp; Titman), <strong>gross profitability</strong> (Novy-Marx),
+              <strong>Sloan accruals</strong>, and <strong>idiosyncratic volatility</strong> (Ang et al.).
+            </li>
+            <li>
+              Every factor is scored as a <strong>sector percentile rank against the S&amp;P 500</strong>, from a
+              locally built 503-name factor snapshot — the same way institutional factor shops score stocks.
+              Weights shift by sector, because gross profit means nothing for a bank.
+            </li>
+            <li>
+              An earnings-quality gate: when reported income runs far ahead of cash generated, the
+              badge flips to <strong>FLAGGED</strong> and the composite caps at 40.
+            </li>
+            <li>
+              Engineering: one merged LLM call per report, automatic model fallback on quota
+              exhaustion, a fully parallel data pipeline, and <strong>graceful degradation</strong> so any
+              single source can fail without blocking the report.
+            </li>
+          </ul>
+          <ul class="tags">
+            <li>Python</li><li>FastAPI</li><li>Next.js</li><li>yfinance</li><li>Gemini API</li><li>Factor models</li>
+          </ul>
+          <div class="card__links">
+            <a href="https://github.com/andyfuuu25/equity-research-desk" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- MLB simulator -->
+        <article class="card reveal">
+          <div class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/andyfuuu25/2026-MLB-Monte-Carlo-Simulation-Project" target="_blank" rel="noopener">MLB Hybrid Season Simulator</a>
+            </h3>
+            <span class="card__kind">Simulation · ML</span>
+          </div>
+          <div class="card__body">
+            <p>
+              A season-projection engine that fuses <strong>team-level Elo ratings</strong> with
+              <strong>bottom-up player projections</strong> through a logistic classifier, then drives the result
+              through a <strong>10,000-trial vectorized Monte Carlo</strong> of the schedule and postseason bracket.
+              The forecasting problem here is structurally the same one as in markets: separating
+              signal from variance over a long horizon.
+            </p>
+          </div>
+          <ul class="card__points">
+            <li>
+              <strong>Validated, not just built.</strong> A walk-forward backtest rebuilds the pipeline exactly as
+              it would have existed on Opening Day 2024 and 2025 — no future data — and scores it blind.
+              The 80% win bands cover <strong>81.7%</strong> of actual team-seasons, and playoff-odds Brier
+              (0.206) beats the climatology baseline (0.240).
+            </li>
+            <li>
+              <strong>I found and fixed my own leak.</strong> Training on same-season roster stats leaked September
+              performance into April predictions. Switching to prior-season features dropped in-sample
+              accuracy from an inflated 0.572 to an honest 0.550 — the honest number is the one shipped.
+            </li>
+            <li>
+              Two uncertainty sources are modelled separately: per-trial latent talent draws
+              (σ calibrated by backtest sweep) and per-game Bernoulli noise. Scenario comparisons
+              share random seeds, so deltas are causal rather than noise.
+            </li>
+            <li>
+              Ablations are trained and reported alongside the main model — hybrid beats Elo-only beats
+              baseline in out-of-sample log-loss, which is the evidence that the roster feature earns its place.
+            </li>
+          </ul>
+          <ul class="tags">
+            <li>Python</li><li>NumPy</li><li>scikit-learn</li><li>Flask</li><li>Monte Carlo</li><li>Backtesting</li>
+          </ul>
+          <div class="card__links">
+            <a href="https://github.com/andyfuuu25/2026-MLB-Monte-Carlo-Simulation-Project" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- SMMT note -->
+        <article class="card reveal">
+          <div class="card__head">
+            <h3 class="card__title">
+              <a href="research/summit-therapeutics.html">Summit Therapeutics — Initiation of Coverage</a>
+            </h3>
+            <span class="card__kind">Equity research</span>
+          </div>
+          <div class="card__body">
+            <p>
+              A full initiation note on <strong>Summit Therapeutics (NASDAQ: SMMT)</strong>, a single-asset
+              biotech whose entire value rests on one bispecific antibody. Built bottom-up from the
+              disclosed Phase III programmes with an <strong>rNPV model</strong>, it lands at $1.75 per share
+              against a $13 share price and a ~$28 consensus target.
+            </p>
+          </div>
+          <ul class="card__points">
+            <li>
+              The note's most important move is what it <em>refuses</em> to claim. A gap that large between a
+              student model and fifteen covering analysts is far likelier to be a limitation in my
+              framework than a market-wide error — so the $1.75 is framed not as a price target but as
+              the answer to a narrower question, with my most likely sources of understatement ranked openly.
+            </li>
+            <li>
+              The clinical crux, stated plainly: no PD-(L)1 × VEGF bispecific has yet shown an overall
+              survival benefit versus pembrolizumab. This is routinely blurred in sell-side coverage.
+            </li>
+            <li>
+              Every assumption is tagged <strong>[S]</strong> sourced, <strong>[D]</strong> derived, or
+              <strong>[J]</strong> judgment — so a reader can audit exactly where the model stops being fact.
+            </li>
+          </ul>
+          <div class="figure-pair">
+            <figure class="card__figure">
+              <img src="assets/img/smmt-exhibit1.jpg" loading="lazy" alt="Exhibit 1: overall survival hazard ratios across PD-(L)1 x VEGF bispecific trials">
+              <figcaption>Exhibit 1 — OS hazard ratios across the bispecific class</figcaption>
+            </figure>
+            <figure class="card__figure">
+              <img src="assets/img/smmt-exhibit2.jpg" loading="lazy" alt="Exhibit 2: value bridge from disclosed programme value to market capitalisation">
+              <figcaption>Exhibit 2 — value bridge, disclosed programmes to market cap</figcaption>
+            </figure>
+          </div>
+          <ul class="tags">
+            <li>rNPV</li><li>Biotech valuation</li><li>Excel</li><li>Clinical due diligence</li>
+          </ul>
+          <div class="card__links">
+            <a href="research/summit-therapeutics.html">Read the full note</a>
+          </div>
+        </article>
+
+        <!-- Report synthesizer -->
+        <article class="card reveal">
+          <div class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/andyfuuu25/reportsynthesizer" target="_blank" rel="noopener">Report Synthesizer</a>
+            </h3>
+            <span class="card__kind">Pipeline · LLM</span>
+          </div>
+          <div class="card__body">
+            <p>
+              A three-stage research pipeline for parsing, extracting, and auditing financial filings.
+              Rather than asking one model to do everything at once, it splits the workflow into
+              specialised steps with an <strong>explicit audit stage</strong> — the design bet being that
+              verification has to be a separate pass to catch anything.
+            </p>
+          </div>
+          <ul class="tags">
+            <li>Python</li><li>LLM orchestration</li><li>Document parsing</li>
+          </ul>
+          <div class="card__links">
+            <a href="https://github.com/andyfuuu25/reportsynthesizer" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- DCF engine -->
+        <article class="card reveal">
+          <div class="card__head">
+            <h3 class="card__title">DCF Engine</h3>
+            <span class="card__kind">Valuation tooling</span>
+          </div>
+          <div class="card__body">
+            <p>
+              A scripted discounted cash flow engine that pulls live inputs and writes a clean, auditable
+              Excel workbook — five-year forecast, <strong>CAPM cost of equity</strong> (beta from market data,
+              risk-free rate from the 10-year Treasury), and an <strong>exit-multiple terminal value</strong>
+              on EV/EBITDA. Separate summary and calculation tabs, so the output is checkable rather
+              than a black box.
+            </p>
+          </div>
+          <ul class="tags">
+            <li>Python</li><li>DCF / WACC</li><li>openpyxl</li><li>yfinance</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== experience -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__label">Experience</span>
+        <h2 class="section__title">Where I've worked</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__role">Undergraduate Research Assistant <span class="timeline__org">· HKU Faculty of Science</span></h3>
+            <span class="timeline__date">Sep – Dec 2025</span>
+          </div>
+          <ul class="timeline__points">
+            <li>Designed a <strong>PRISMA-aligned systematic literature review</strong>, from research question formulation through multi-database search strategy.</li>
+            <li>Built a structured, queryable database of screened studies — extracting key variables and methodological detail to support later meta-analysis.</li>
+            <li>Consolidated scattered project data into a standardised Excel collection system, improving entry and retrieval efficiency by <strong>75%</strong>.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__role">Innovation Consultant → Automation Solutions Engineer <span class="timeline__org">· GUTolution</span></h3>
+            <span class="timeline__date">Jun – Aug 2025</span>
+          </div>
+          <ul class="timeline__points">
+            <li>Built automated health-forecast models using <strong>random forest classification</strong>, cutting diagnostic report generation from 30 minutes to 5 (<strong>83% faster</strong>) while improving predictive accuracy.</li>
+            <li>Engineered AI-driven outreach tooling with API scraping and LLM customisation, increasing cold email generation speed roughly <strong>80×</strong>.</li>
+            <li>Performed scientific due diligence to validate reference ranges and expand diagnostic coverage by six bacterial strains.</li>
+            <li>Led cross-functional work across operations, R&amp;D, marketing and external partners; contributed market sizing and growth projections to investor pitch decks.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__role">Market Research Analyst Intern <span class="timeline__org">· Mekong Tours Hong Kong</span></h3>
+            <span class="timeline__date">Jun – Aug 2022</span>
+          </div>
+          <ul class="timeline__points">
+            <li>Collected and pre-processed <strong>500+ data points</strong> across CRM, ERP, industry reports and social media into consolidated analysis datasets.</li>
+            <li>Built a <strong>regression model to forecast demand</strong> and presented the findings into strategic sales planning.</li>
+            <li>Developed Tableau dashboards with a 3-person analytics team covering profitability and retention; two recommendations went to leadership.</li>
+            <li>Proposed OCR-based data entry automation with quality checks, projecting a <strong>40–70% reduction</strong> in manual processing time.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- =================================================== competitions -->
+  <section class="section" id="competitions">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__label">Competitions &amp; certificates</span>
+        <h2 class="section__title">Markets, under a clock</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__role">Bloomberg Global Trading Challenge <span class="timeline__org">· Team lead, 5 people</span></h3>
+            <span class="timeline__date">2025</span>
+          </div>
+          <ul class="timeline__points">
+            <li>Managed a <strong>$1M virtual portfolio</strong> over five weeks, finishing in the <strong>72nd percentile globally</strong> (rank 758).</li>
+            <li>Designed and executed a quantitative, factor-based strategy on the Bloomberg Terminal, screening systematically for growth, momentum, and high/low-beta defensive positions.</li>
+            <li>Mitigated downside with volatility-adjusted trailing stops and a <strong>net beta-neutral</strong> book to stabilise weekly performance.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__role">Investment Banking Simulation Certificate <span class="timeline__org">· J.P. Morgan Chase</span></h3>
+            <span class="timeline__date">2025</span>
+          </div>
+          <ul class="timeline__points">
+            <li>Completed a simulation replicating the cross-border advisory workflow for an M&amp;A transaction.</li>
+            <li>Ran Excel sensitivity stress tests on WACC, a hypothetical competing-bidder premium, and simulated supply chain disruption, tracking the effect on the target's valuation range.</li>
+            <li>Drafted a two-page pitch covering target profiles, strategy, and transaction logic.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__role">Biotechnology Industry &amp; Entrepreneurship <span class="timeline__org">· HKU BIOL2409 — Grade A</span></h3>
+            <span class="timeline__date">2024</span>
+          </div>
+          <ul class="timeline__points">
+            <li>Developed a value proposition, go-to-market strategy, and commercial assessment for <strong>Intellia Therapeutics</strong>.</li>
+            <li>Conducted market opportunity analysis, competitive research, and investment pitch preparation.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================================ skills -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__label">Toolkit</span>
+        <h2 class="section__title">What I work with</h2>
+      </div>
+
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3>Finance &amp; modelling</h3>
+          <ul class="tags">
+            <li>DCF / WACC</li><li>rNPV</li><li>Comparable analysis</li><li>Factor models</li>
+            <li>Sensitivity analysis</li><li>Bloomberg Terminal</li><li>Portfolio construction</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Quantitative &amp; statistical</h3>
+          <ul class="tags">
+            <li>Monte Carlo</li><li>Regression</li><li>Logistic classification</li><li>Random forest</li>
+            <li>Backtesting</li><li>Calibration &amp; coverage</li><li>Forecasting</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Programming &amp; data</h3>
+          <ul class="tags">
+            <li>Python</li><li>NumPy</li><li>pandas</li><li>scikit-learn</li><li>FastAPI</li>
+            <li>Flask</li><li>Next.js</li><li>R</li><li>SQL-style data modelling</li><li>Claude Code</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Analysis &amp; reporting</h3>
+          <ul class="tags">
+            <li>Advanced Excel</li><li>VBA</li><li>Power Query</li><li>Tableau</li>
+            <li>Data storytelling</li><li>PRISMA reviews</li><li>Due diligence</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= education -->
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__label">Education</span>
+        <h2 class="section__title">Background</h2>
+      </div>
+
+      <ul class="edu">
+        <li class="edu__item reveal">
+          <div>
+            <h3 class="edu__school">The Hong Kong University of Science and Technology
+              <span class="edu__degree">MSc Finance — offer accepted, Fall 2026 cohort</span>
+            </h3>
+          </div>
+          <span class="edu__date">Sep 2026 – Nov 2027</span>
+        </li>
+        <li class="edu__item reveal">
+          <div>
+            <h3 class="edu__school">The University of Hong Kong
+              <span class="edu__degree">BSc Molecular Biology &amp; Biotechnology · Exchange: Universität Konstanz, Germany · Volleyball and softball teams</span>
+            </h3>
+          </div>
+          <span class="edu__date">Sep 2021 – Jul 2026</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =========================================================== contact -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <span class="section__label">Contact</span>
+      <h2 class="section__title">Let's talk</h2>
+      <p>
+        I'm looking for roles in equity research, investment banking, and quantitative analysis —
+        particularly where a healthcare or biotech background is worth something. The fastest way
+        to reach me is email.
+      </p>
+      <div class="actions">
+        <a class="btn btn--primary" href="mailto:andyfu2021@gmail.com">andyfu2021@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/andy-fu-583a80264/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/andyfuuu25" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="assets/files/Andy_Fu_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <span>© <span id="year">2026</span> Chi Leong Andy Fu</span>
+  <span>Built by hand. Hosted on GitHub Pages.</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
