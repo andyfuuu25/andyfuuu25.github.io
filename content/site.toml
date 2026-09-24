@@ -1,0 +1,305 @@
+# ============================================================================
+#  EVERYTHING ON THE SITE IS EDITED HERE.
+# 
+#  Change this file, then run  build.bat  (or: python tools/build.py).
+#  You never need to touch index.html — it is generated from this file.
+# 
+#  Formatting you can use in any text below:
+#     **bold**        *italic*        `code`        [link text](https://...)
+# 
+#  To remove a project, experience entry, skill group, etc.: delete its whole
+#  [[block]] — from its  [[...]]  header down to the line before the next one.
+#  To reorder: move the block. Order on the page follows order in this file.
+# ============================================================================
+
+
+[site]
+name       = "Chi Leong Andy Fu"
+short_name = "Andy Fu"          # shown in the top-left corner and the footer
+location   = "Hong Kong"        # small label above your name
+url        = "https://andyfuuu25.github.io/"
+
+# Browser tab title and the description search engines show.
+page_title  = "Andy Fu — Quantitative Research & Finance"
+description = "Andy Fu (Fu Chi Leong) — incoming MSc Finance at HKUST. Portfolio of quantitative research tools, equity research, and simulation projects."
+
+# Contact + files. To swap your CV or photo, drop the new file in the folder
+# shown and update the filename here.
+email    = "andyfu2021@gmail.com"
+linkedin = "https://www.linkedin.com/in/andy-fu-583a80264/"
+github   = "https://github.com/andyfuuu25"
+cv       = "assets/files/Andy_Fu_CV.pdf"    # put new CVs in assets/files/
+portrait = "assets/img/headshot.jpg"        # put new photos in assets/img/
+
+
+# ============================================================================
+#  HERO — the first thing on the page
+# ============================================================================
+
+[hero]
+tagline = """
+Incoming MSc Finance at HKUST. I build quantitative research tools —
+factor models, Monte Carlo simulators, and valuation engines.
+"""
+
+bio = """
+I came to finance from **molecular biology**, and that turns out to be a useful
+place to start. Both disciplines are about the same problem: estimating
+something you cannot observe directly, then being honest about the error bars.
+I write the code myself, backtest it against reality, and document what the
+model cannot see. My work sits where **healthcare and biotech** meet
+**capital markets** — where reading a clinical trial readout and reading a cash
+flow statement are the same job.
+"""
+
+
+# ============================================================================
+#  SELECTED WORK
+# ============================================================================
+
+[work]
+label = "Selected work"
+title = "Things I built, and what they get right"
+intro = """
+Each of these is a full project rather than a tutorial exercise — real data,
+documented assumptions, and a stated account of where the model breaks down.
+"""
+
+# ---------------------------------------------------------------------------
+[[work.projects]]
+title = "Equity Research Desk"
+kind  = "Full-stack · Quant"
+url   = "https://github.com/andyfuuu25/equity-research-desk"
+summary = """
+Type a ticker, get an analyst-style research profile in 8–15 seconds: a
+plain-English business summary, forward catalysts sorted into confirmed /
+developing / risk, and a **five-factor quantitative score** — all built on free
+data sources and free-tier APIs.
+"""
+points = [
+  "Factors come from the academic literature rather than invention: **EBIT/EV** (Greenblatt), **12-1 momentum** (Jegadeesh & Titman), **gross profitability** (Novy-Marx), **Sloan accruals**, and **idiosyncratic volatility** (Ang et al.).",
+  "Every factor is scored as a **sector percentile rank against the S&P 500**, from a locally built 503-name factor snapshot — the same way institutional factor shops score stocks. Weights shift by sector, because gross profit means nothing for a bank.",
+  "An earnings-quality gate: when reported income runs far ahead of cash generated, the badge flips to **FLAGGED** and the composite caps at 40.",
+  "Engineering: one merged LLM call per report, automatic model fallback on quota exhaustion, a fully parallel data pipeline, and **graceful degradation** so any single source can fail without blocking the report.",
+]
+tags = ["Python", "FastAPI", "Next.js", "yfinance", "Gemini API", "Factor models"]
+links = [
+  { label = "View on GitHub", href = "https://github.com/andyfuuu25/equity-research-desk" },
+]
+
+# ---------------------------------------------------------------------------
+[[work.projects]]
+title = "MLB Hybrid Season Simulator"
+kind  = "Simulation · ML"
+url   = "https://github.com/andyfuuu25/2026-MLB-Monte-Carlo-Simulation-Project"
+summary = """
+A season-projection engine that fuses **team-level Elo ratings** with
+**bottom-up player projections** through a logistic classifier, then drives the
+result through a **10,000-trial vectorized Monte Carlo** of the schedule and
+postseason bracket. The forecasting problem here is structurally the same one
+as in markets: separating signal from variance over a long horizon.
+"""
+points = [
+  "**Validated, not just built.** A walk-forward backtest rebuilds the pipeline exactly as it would have existed on Opening Day 2024 and 2025 — no future data — and scores it blind. The 80% win bands cover **81.7%** of actual team-seasons, and playoff-odds Brier (0.206) beats the climatology baseline (0.240).",
+  "**I found and fixed my own leak.** Training on same-season roster stats leaked September performance into April predictions. Switching to prior-season features dropped in-sample accuracy from an inflated 0.572 to an honest 0.550 — the honest number is the one shipped.",
+  "Two uncertainty sources are modelled separately: per-trial latent talent draws (σ calibrated by backtest sweep) and per-game Bernoulli noise. Scenario comparisons share random seeds, so deltas are causal rather than noise.",
+  "Ablations are trained and reported alongside the main model — hybrid beats Elo-only beats baseline in out-of-sample log-loss, which is the evidence that the roster feature earns its place.",
+]
+tags = ["Python", "NumPy", "scikit-learn", "Flask", "Monte Carlo", "Backtesting"]
+links = [
+  { label = "View on GitHub", href = "https://github.com/andyfuuu25/2026-MLB-Monte-Carlo-Simulation-Project" },
+]
+
+# ---------------------------------------------------------------------------
+[[work.projects]]
+title = "Summit Therapeutics — Post-WCLC Review"
+kind  = "Equity research"
+url   = "research/summit-therapeutics.html"
+summary = """
+A research note on **Summit Therapeutics (Nasdaq: SMMT)**, a single-asset
+biotech whose entire value rests on one bispecific antibody. Written after
+WCLC 2026 delivered the first Phase III overall-survival win against Keytruda —
+and argues that the result, while real, does not answer the question the stock
+is actually priced on.
+"""
+points = [
+  "The work is in separating what the data proved from what it didn't. HARMONi-2 is a **China-only, interim, secondary-endpoint, monotherapy** result. The two subgroups that matter most for Summit's own pivotal trial — PD-L1 1–49% and non-squamous — both still cross 1.",
+  "**Neutral, with the thresholds stated in advance:** positive on a squamous final PFS HR ≤0.70 that holds in Western patients; negative on a miss or an Asia-only benefit. Saying what would change your mind *before* the readout is the part that's testable afterwards.",
+  "Every number is tied to one of **31 numbered sources** — company filings, the 10-Q going-concern language, trial registries, and the conference presentations themselves.",
+]
+tags = ["Biotech valuation", "Clinical due diligence", "Catalyst mapping", "Equity research"]
+figures = [
+  { src = "assets/img/smmt-exhibit1.jpg", alt = "Exhibit 1: HARMONi overall survival hazard ratios across three data cuts, showing the ITT interval excluding 1 while the Western subgroup interval does not", caption = "Exhibit 1 — HARMONi OS across three cuts" },
+]
+links = [
+  { label = "Read the full note", href = "research/summit-therapeutics.html" },
+  { label = "Download the PDF", href = "assets/files/Andy_Fu_SMMT_Research_Note.pdf" },
+]
+
+# ---------------------------------------------------------------------------
+[[work.projects]]
+title = "Report Synthesizer"
+kind  = "Pipeline · LLM"
+url   = "https://github.com/andyfuuu25/reportsynthesizer"
+summary = """
+A three-stage research pipeline for parsing, extracting, and auditing financial
+filings. Rather than asking one model to do everything at once, it splits the
+workflow into specialised steps with an **explicit audit stage** — the design
+bet being that verification has to be a separate pass to catch anything.
+"""
+tags = ["Python", "LLM orchestration", "Document parsing"]
+links = [
+  { label = "View on GitHub", href = "https://github.com/andyfuuu25/reportsynthesizer" },
+]
+
+
+# ============================================================================
+#  EXPERIENCE
+# ============================================================================
+
+[experience]
+label = "Experience"
+title = "Where I've worked"
+
+[[experience.items]]
+role = "Undergraduate Research Assistant"
+org  = "HKU Faculty of Science"
+date = "Sep – Dec 2025"
+points = [
+  "Designed a **PRISMA-aligned systematic literature review**, from research question formulation through multi-database search strategy.",
+  "Built a structured, queryable database of screened studies — extracting key variables and methodological detail to support later meta-analysis.",
+  "Consolidated scattered project data into a standardised Excel collection system, improving entry and retrieval efficiency by **75%**.",
+]
+
+[[experience.items]]
+role = "Innovation Consultant → Automation Solutions Engineer"
+org  = "GUTolution"
+date = "Jun – Aug 2025"
+points = [
+  "Built automated health-forecast models using **random forest classification**, cutting diagnostic report generation from 30 minutes to 5 (**83% faster**) while improving predictive accuracy.",
+  "Engineered AI-driven outreach tooling with API scraping and LLM customisation, increasing cold email generation speed roughly **80×**.",
+  "Performed scientific due diligence to validate reference ranges and expand diagnostic coverage by six bacterial strains.",
+  "Led cross-functional work across operations, R&D, marketing and external partners; contributed market sizing and growth projections to investor pitch decks.",
+]
+
+[[experience.items]]
+role = "Market Research Analyst Intern"
+org  = "Mekong Tours Hong Kong"
+date = "Jun – Aug 2022"
+points = [
+  "Collected and pre-processed **500+ data points** across CRM, ERP, industry reports and social media into consolidated analysis datasets.",
+  "Built a **regression model to forecast demand** and presented the findings into strategic sales planning.",
+  "Developed Tableau dashboards with a 3-person analytics team covering profitability and retention; two recommendations went to leadership.",
+  "Proposed OCR-based data entry automation with quality checks, projecting a **40–70% reduction** in manual processing time.",
+]
+
+
+# ============================================================================
+#  COMPETITIONS & CERTIFICATES
+# ============================================================================
+
+[competitions]
+label = "Competitions & certificates"
+title = "Markets, under a clock"
+
+[[competitions.items]]
+role = "Bloomberg Global Trading Challenge"
+org  = "Team lead, 5 people"
+date = "2025"
+points = [
+  "Managed a **$1M virtual portfolio** over five weeks, finishing in the **72nd percentile globally** (rank 758).",
+  "Designed and executed a quantitative, factor-based strategy on the Bloomberg Terminal, screening systematically for growth, momentum, and high/low-beta defensive positions.",
+  "Mitigated downside with volatility-adjusted trailing stops and a **net beta-neutral** book to stabilise weekly performance.",
+]
+
+[[competitions.items]]
+role = "Investment Banking Simulation Certificate"
+org  = "J.P. Morgan Chase"
+date = "2025"
+points = [
+  "Completed a simulation replicating the cross-border advisory workflow for an M&A transaction.",
+  "Ran Excel sensitivity stress tests on WACC, a hypothetical competing-bidder premium, and simulated supply chain disruption, tracking the effect on the target's valuation range.",
+  "Drafted a two-page pitch covering target profiles, strategy, and transaction logic.",
+]
+
+[[competitions.items]]
+role = "Biotechnology Industry & Entrepreneurship"
+org  = "HKU BIOL2409 — Grade A"
+date = "2024"
+points = [
+  "Developed a value proposition, go-to-market strategy, and commercial assessment for **Intellia Therapeutics**.",
+  "Conducted market opportunity analysis, competitive research, and investment pitch preparation.",
+]
+
+
+# ============================================================================
+#  SKILLS
+# ============================================================================
+
+[skills]
+label = "Toolkit"
+title = "What I work with"
+
+[[skills.groups]]
+name  = "Finance & modelling"
+items = ["DCF / WACC", "rNPV", "Comparable analysis", "Factor models", "Sensitivity analysis", "Bloomberg Terminal", "Portfolio construction"]
+
+[[skills.groups]]
+name  = "Quantitative & statistical"
+items = ["Monte Carlo", "Regression", "Logistic classification", "Random forest", "Backtesting", "Calibration & coverage", "Forecasting"]
+
+[[skills.groups]]
+name  = "Programming & data"
+items = ["Python", "NumPy", "pandas", "scikit-learn", "FastAPI", "Flask", "Next.js", "R", "SQL-style data modelling", "Claude Code"]
+
+[[skills.groups]]
+name  = "Analysis & reporting"
+items = ["Advanced Excel", "VBA", "Power Query", "Tableau", "Data storytelling", "PRISMA reviews", "Due diligence"]
+
+
+# ============================================================================
+#  EDUCATION
+# ============================================================================
+
+[education]
+label = "Education"
+title = "Background"
+
+[[education.items]]
+school = "The Hong Kong University of Science and Technology"
+detail = "MSc Finance — offer accepted, Fall 2026 cohort"
+date   = "Sep 2026 – Nov 2027"
+
+[[education.items]]
+school = "The University of Hong Kong"
+detail = "BSc Molecular Biology & Biotechnology · Exchange: Universität Konstanz, Germany · Volleyball and softball teams"
+date   = "Sep 2021 – Jul 2026"
+
+
+# ============================================================================
+#  CONTACT
+# ============================================================================
+
+[contact]
+label = "Contact"
+title = "Let's talk"
+body = """
+I'm looking for roles in equity research, investment banking, and quantitative
+analysis — particularly where a healthcare or biotech background is worth
+something. The fastest way to reach me is email.
+"""
+
+
+# ============================================================================
+#  RESEARCH NOTES — each one becomes its own page under research/
+#  The source markdown lives in content/notes/
+# ============================================================================
+
+[[notes]]
+source   = "summit-therapeutics.md"          # file in content/notes/
+output   = "research/summit-therapeutics.html"
+title    = "Summit Therapeutics (Nasdaq: SMMT) — Post-WCLC Review"
+description = "A post-WCLC review of Summit Therapeutics: HARMONi-2 is the first Phase III overall-survival win against Keytruda, but it does not answer the Western question the stock is priced on."
+# Images referenced in the markdown are mapped to files in assets/img/ here.
+[notes.images]
+"exhibit1_harmoni_os_v2.png" = "../assets/img/smmt-exhibit1.jpg"

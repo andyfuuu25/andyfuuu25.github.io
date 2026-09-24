@@ -272,7 +272,7 @@ img { max-width: 100%; height: auto; display: block; }
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center center;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   justify-self: start;
@@ -471,6 +471,9 @@ img { max-width: 100%; height: auto; display: block; }
   grid-template-columns: 1fr;
 }
 @media (min-width: 34rem) { .figure-pair { grid-template-columns: 1fr 1fr; } }
+
+/* A lone exhibit just spans the card. */
+.figure-single { display: grid; }
 
 /* Exhibits have different aspect ratios; pin the captions to a shared baseline. */
 .figure-pair .card__figure {
