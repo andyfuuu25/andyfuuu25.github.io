@@ -138,6 +138,34 @@ links = [
 
 # ---------------------------------------------------------------------------
 [[work.projects]]
+title = "Aging Genes in Arthropods — Structured Literature Review"
+kind  = "Research · Capstone"
+url   = "research/aging-genes-arthropods.html"
+summary = """
+My HKU capstone: a structured review of **41 papers** asking whether
+stress-response genes — above all heat shock proteins — actually drive aging in
+arthropods. The headline result is a negative one about the field itself. The
+literature is large and active, but it almost never runs the test its own
+framing implies.
+"""
+points = [
+  "Built as a **six-sheet queryable database** rather than a reading list: one row per paper across 16 coded fields, a 0/1 flag matrix so multi-valued tags count correctly, live-formula summaries, and a stress-type × hallmark evidence map that makes the empty cells visible.",
+  "**The finding is the gap.** HSP70 carries 51% of the literature and loss of proteostasis 71% — but only 29% of papers measure lifespan or age-related change at all, and just **two** manipulate a gene and then show a longevity effect. Telomere attrition and cellular senescence have zero papers.",
+  "Every cleaning decision is logged in a **Data_QA sheet** — species synonyms that had been double-counted, malformed gene entries, and three papers whose hallmark labels were non-standard and left flagged as *Unmapped* rather than quietly forced into a category.",
+  "It also records what the data cannot support: the source sheet carries no publication years, so trends over time are not analysed rather than estimated. Coded throughout against the **López-Otín hallmarks of aging** framework.",
+]
+tags = ["Systematic review", "Research design", "Evidence grading", "Data cleaning", "Excel", "Molecular biology"]
+figures = [
+  { src = "assets/img/capstone-hallmarks.jpg", alt = "Two charts: papers per aging hallmark, led by loss of proteostasis at 29 with telomere attrition and cellular senescence at zero; and papers by strength of evidence, 24 correlational against 12 causal and 5 biomarker", caption = "Where the evidence clusters, and how strong it is" },
+]
+links = [
+  { label = "Read the review", href = "research/aging-genes-arthropods.html" },
+  { label = "Executive summary (PDF)", href = "assets/files/Andy_Fu_Capstone_Executive_Summary.pdf" },
+  { label = "Coded database (XLSX)", href = "assets/files/Andy_Fu_Capstone_LitReview_Database.xlsx" },
+]
+
+# ---------------------------------------------------------------------------
+[[work.projects]]
 title = "Report Synthesizer"
 kind  = "Pipeline · LLM"
 url   = "https://github.com/andyfuuu25/reportsynthesizer"
@@ -303,3 +331,11 @@ description = "A post-WCLC review of Summit Therapeutics: HARMONi-2 is the first
 # Images referenced in the markdown are mapped to files in assets/img/ here.
 [notes.images]
 "exhibit1_harmoni_os_v2.png" = "../assets/img/smmt-exhibit1.jpg"
+
+[[notes]]
+source   = "aging-genes-arthropods.md"
+output   = "research/aging-genes-arthropods.html"
+title    = "Stress-Response Genes and the Hallmarks of Aging in Arthropods"
+description = "A structured review of 41 papers on stress-response genes and aging in arthropods: HSP70 dominates the literature, but only two studies link a gene to longevity causally."
+[notes.images]
+"capstone_hallmarks_figure.png" = "../assets/img/capstone-hallmarks.jpg"

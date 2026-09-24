@@ -472,9 +472,21 @@ def build_note(cfg: dict, note: dict, i: int) -> tuple[Path, str]:
         )
     body = body.replace("<img ", '<img loading="lazy" ')
     body = re.sub(r"<p>(<img [^>]*>)</p>", r"<figure>\1</figure>", body)
-    # Every table gets its own horizontal scroll container.
-    body = body.replace("<table>", '<div class="table-scroll"><table>')
-    body = body.replace("</table>", "</table></div>")
+    # A table written with an empty header row is a run of headline figures,
+    # not data — drop the blank header and let the stat styling take over.
+    body = re.sub(
+        r"<table>\s*<thead>\s*<tr>\s*(?:<th[^>]*>\s*</th>\s*)+</tr>\s*</thead>",
+        '<table class="stat-table">',
+        body,
+    )
+    # Every other table gets its own horizontal scroll container. Tables never
+    # nest, so a non-greedy match pairs each opening tag with its own close.
+    body = re.sub(
+        r"<table(?![^>]*stat-table)([^>]*)>(.*?)</table>",
+        r'<div class="table-scroll"><table\1>\2</table></div>',
+        body,
+        flags=re.S,
+    )
 
     title = require(note, "title", f"notes #{i}")
     desc = note.get("description", site["description"])
