@@ -51,7 +51,7 @@ HSP70 appears in **21 of 41 papers**, and loss of proteostasis is the hallmark i
 
 ### 3. Two literatures that rarely meet
 
-An older physiological literature in flies measures aging directly — lifespan, lipid peroxidation, age pigments, rate-of-living — but studies few genes. A newer molecular literature, dominated by *Artemia* and farmed crustaceans (12 papers from aquaculture species), studies genes in depth but seldom follows animals across their lifespan.
+An older physiological literature in flies measures aging directly (lifespan, lipid peroxidation, age pigments, rate-of-living) but studies few genes. A newer molecular literature, dominated by *Artemia* and farmed crustaceans (12 papers from aquaculture species), studies genes in depth but seldom follows animals across their lifespan.
 
 ### 4. HSF1 stands out as a mechanistic lead
 
@@ -61,7 +61,7 @@ In *Daphnia*, the short-lived species loses its ability to induce Hsp70 by mid-l
 
 Mild non-lethal heat shock protects shrimp against *Vibrio* and white spot virus through HSP70/HSP90, and low-dose radiation extends fruit fly lifespan through HSP and DNA-repair pathways. Dietary supplements in aquaculture that raise HSP70 and SOD fit the same pattern of mild stress priming resilience.
 
-![Left: coverage of aging hallmarks, with loss of proteostasis dominant at 29 papers and telomere attrition and cellular senescence at zero. Right: papers by strength of evidence — 24 correlational, 12 causal, 5 biomarker.](capstone_hallmarks_figure.png)
+![Left: coverage of aging hallmarks, with loss of proteostasis dominant at 29 papers and telomere attrition and cellular senescence at zero. Right: papers by strength of evidence, 24 correlational against 12 causal and 5 biomarker.](capstone_hallmarks_figure.png)
 
 *Figure 1. Left: coverage of aging hallmarks (a paper can map to several; telomere attrition and cellular senescence shown for reference). Right: papers by strength of evidence.*
 
@@ -73,13 +73,13 @@ The review ships as a six-sheet workbook rather than a reading list, so the coun
 
 | Sheet | What it holds |
 |---|---|
-| **Cleaned_DB** | One row per paper, cleaned text plus derived tags — taxon, research context, gene family, evidence type, direct aging measure |
+| **Cleaned_DB** | One row per paper, cleaned text plus derived tags: taxon, research context, gene family, evidence type, direct aging measure |
 | **Flags** | 0/1 indicator columns for every multi-valued field (stress types, hallmarks, gene families), so papers tagged with several categories count correctly |
-| **Summary** | Counts by taxon, context, gene family, stress type, hallmark, method and evidence type — live formulas reading from Flags |
+| **Summary** | Counts by taxon, context, gene family, stress type, hallmark, method and evidence type, as live formulas reading from Flags |
 | **Evidence_Map** | Stress type × aging hallmark matrix, showing where evidence clusters and where the gaps are |
 | **Data_QA** | Every correction made to the original sheet, and the items that still need a manual decision |
 
-The **Data_QA** sheet is the part I would point a reader at first. It logs each fix and its justification — four papers where *Litopenaeus vannamei* and *Penaeus vannamei* were counted as separate species, malformed gene entries, stray characters in category labels — alongside three papers whose hallmark labels were non-standard and are flagged as **Unmapped** rather than quietly forced into a category. It also records what could not be fixed: the source sheet carries no year, author, journal or DOI columns, which is why trends over time are not analysed here.
+The Data_QA sheet is the one I would point a reader at first. It logs every fix and why it was made: four papers where *Litopenaeus vannamei* and *Penaeus vannamei* had been counted as separate species, malformed gene entries, and stray characters in category labels. Three papers whose hallmark labels were non-standard are flagged as **Unmapped** rather than quietly forced into a category. The sheet also records what could not be fixed. The source data carries no year, author, journal or DOI columns, which is why trends over time are not analysed here.
 
 ---
 
@@ -87,7 +87,7 @@ The **Data_QA** sheet is the part I would point a reader at first. It logs each 
 
 **Close the causal gap.** The strongest next study would combine gene knockdown (HSP70, HSP40 or HSF1) with a full lifespan assay in a tractable species such as *Artemia*, where RNAi already works and diapause offers a natural model of arrested aging.
 
-**Measure inducibility over age.** Repeating the *Daphnia* design — testing stress-response induction in young versus old animals — in other taxa would show whether loss of inducibility is general.
+**Measure inducibility over age.** Repeating the *Daphnia* design in other taxa, testing stress-response induction in young versus old animals, would show whether loss of inducibility is general.
 
 **Broaden the hallmarks.** Genomic, epigenetic and nutrient-sensing mechanisms are barely covered; the one transgenerational epigenetic study (phloroglucinol in *Artemia*) suggests this is a productive direction.
 

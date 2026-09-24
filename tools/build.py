@@ -473,7 +473,7 @@ def build_note(cfg: dict, note: dict, i: int) -> tuple[Path, str]:
     body = body.replace("<img ", '<img loading="lazy" ')
     body = re.sub(r"<p>(<img [^>]*>)</p>", r"<figure>\1</figure>", body)
     # A table written with an empty header row is a run of headline figures,
-    # not data — drop the blank header and let the stat styling take over.
+    # not data. Drop the blank header and let the stat styling take over.
     body = re.sub(
         r"<table>\s*<thead>\s*<tr>\s*(?:<th[^>]*>\s*</th>\s*)+</tr>\s*</thead>",
         '<table class="stat-table">',
@@ -496,7 +496,7 @@ def build_note(cfg: dict, note: dict, i: int) -> tuple[Path, str]:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(title)} — {e(site["short_name"])}</title>
+<title>{e(title)} | {e(site["short_name"])}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="author" content="{e(site["name"])}">
 

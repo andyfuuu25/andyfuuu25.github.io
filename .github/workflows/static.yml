@@ -1,8 +1,8 @@
 # Builds the site from content/site.toml and deploys it to GitHub Pages.
 #
 # Because the build runs here, you can edit content/site.toml (or a note in
-# content/notes/) directly on github.com, commit, and the live site updates —
-# no need to run anything on your own machine.
+# content/notes/) directly on github.com, commit, and the live site updates.
+# You do not need to run anything on your own machine.
 name: Build and deploy to Pages
 
 on:

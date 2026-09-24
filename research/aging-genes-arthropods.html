@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stress-Response Genes and the Hallmarks of Aging in Arthropods — Andy Fu</title>
+<title>Stress-Response Genes and the Hallmarks of Aging in Arthropods | Andy Fu</title>
 <meta name="description" content="A structured review of 41 papers on stress-response genes and aging in arthropods: HSP70 dominates the literature, but only two studies link a gene to longevity causally.">
 <meta name="author" content="Chi Leong Andy Fu">
 
@@ -106,12 +106,12 @@
       <li><strong>Loss of HSF-1</strong> in the copepod <em>Tigriopus californicus</em>, which accelerated aging</li>
       </ul>
       <h3>3. Two literatures that rarely meet</h3>
-      <p>An older physiological literature in flies measures aging directly — lifespan, lipid peroxidation, age pigments, rate-of-living — but studies few genes. A newer molecular literature, dominated by <em>Artemia</em> and farmed crustaceans (12 papers from aquaculture species), studies genes in depth but seldom follows animals across their lifespan.</p>
+      <p>An older physiological literature in flies measures aging directly (lifespan, lipid peroxidation, age pigments, rate-of-living) but studies few genes. A newer molecular literature, dominated by <em>Artemia</em> and farmed crustaceans (12 papers from aquaculture species), studies genes in depth but seldom follows animals across their lifespan.</p>
       <h3>4. HSF1 stands out as a mechanistic lead</h3>
       <p>In <em>Daphnia</em>, the short-lived species loses its ability to induce Hsp70 by mid-life while the long-lived species keeps it, and this tracks a decline in HSF-1 DNA binding. Together with the two causal HSF1 studies, this points to <strong>reduced stress-response inducibility</strong>, not simply lower gene expression, as the variable most worth testing.</p>
       <h3>5. Hormesis recurs across very different systems</h3>
       <p>Mild non-lethal heat shock protects shrimp against <em>Vibrio</em> and white spot virus through HSP70/HSP90, and low-dose radiation extends fruit fly lifespan through HSP and DNA-repair pathways. Dietary supplements in aquaculture that raise HSP70 and SOD fit the same pattern of mild stress priming resilience.</p>
-      <figure><img loading="lazy" alt="Left: coverage of aging hallmarks, with loss of proteostasis dominant at 29 papers and telomere attrition and cellular senescence at zero. Right: papers by strength of evidence — 24 correlational, 12 causal, 5 biomarker." src="../assets/img/capstone-hallmarks.jpg" width="1400" height="486"></figure>
+      <figure><img loading="lazy" alt="Left: coverage of aging hallmarks, with loss of proteostasis dominant at 29 papers and telomere attrition and cellular senescence at zero. Right: papers by strength of evidence, 24 correlational against 12 causal and 5 biomarker." src="../assets/img/capstone-hallmarks.jpg" width="1400" height="486"></figure>
       <p><em>Figure 1. Left: coverage of aging hallmarks (a paper can map to several; telomere attrition and cellular senescence shown for reference). Right: papers by strength of evidence.</em></p>
       <hr>
       <h2>The dataset behind it</h2>
@@ -126,7 +126,7 @@
       <tbody>
       <tr>
       <td><strong>Cleaned_DB</strong></td>
-      <td>One row per paper, cleaned text plus derived tags — taxon, research context, gene family, evidence type, direct aging measure</td>
+      <td>One row per paper, cleaned text plus derived tags: taxon, research context, gene family, evidence type, direct aging measure</td>
       </tr>
       <tr>
       <td><strong>Flags</strong></td>
@@ -134,7 +134,7 @@
       </tr>
       <tr>
       <td><strong>Summary</strong></td>
-      <td>Counts by taxon, context, gene family, stress type, hallmark, method and evidence type — live formulas reading from Flags</td>
+      <td>Counts by taxon, context, gene family, stress type, hallmark, method and evidence type, as live formulas reading from Flags</td>
       </tr>
       <tr>
       <td><strong>Evidence_Map</strong></td>
@@ -146,11 +146,11 @@
       </tr>
       </tbody>
       </table></div>
-      <p>The <strong>Data_QA</strong> sheet is the part I would point a reader at first. It logs each fix and its justification — four papers where <em>Litopenaeus vannamei</em> and <em>Penaeus vannamei</em> were counted as separate species, malformed gene entries, stray characters in category labels — alongside three papers whose hallmark labels were non-standard and are flagged as <strong>Unmapped</strong> rather than quietly forced into a category. It also records what could not be fixed: the source sheet carries no year, author, journal or DOI columns, which is why trends over time are not analysed here.</p>
+      <p>The Data_QA sheet is the one I would point a reader at first. It logs every fix and why it was made: four papers where <em>Litopenaeus vannamei</em> and <em>Penaeus vannamei</em> had been counted as separate species, malformed gene entries, and stray characters in category labels. Three papers whose hallmark labels were non-standard are flagged as <strong>Unmapped</strong> rather than quietly forced into a category. The sheet also records what could not be fixed. The source data carries no year, author, journal or DOI columns, which is why trends over time are not analysed here.</p>
       <hr>
       <h2>Gaps and recommended next steps</h2>
       <p><strong>Close the causal gap.</strong> The strongest next study would combine gene knockdown (HSP70, HSP40 or HSF1) with a full lifespan assay in a tractable species such as <em>Artemia</em>, where RNAi already works and diapause offers a natural model of arrested aging.</p>
-      <p><strong>Measure inducibility over age.</strong> Repeating the <em>Daphnia</em> design — testing stress-response induction in young versus old animals — in other taxa would show whether loss of inducibility is general.</p>
+      <p><strong>Measure inducibility over age.</strong> Repeating the <em>Daphnia</em> design in other taxa, testing stress-response induction in young versus old animals, would show whether loss of inducibility is general.</p>
       <p><strong>Broaden the hallmarks.</strong> Genomic, epigenetic and nutrient-sensing mechanisms are barely covered; the one transgenerational epigenetic study (phloroglucinol in <em>Artemia</em>) suggests this is a productive direction.</p>
       <p><strong>Use aquaculture data.</strong> Priming and diet trials in farmed species already generate stress-gene data; adding survival-over-time endpoints would make them informative for aging research.</p>
       <hr>

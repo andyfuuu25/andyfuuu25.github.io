@@ -1,6 +1,6 @@
 # andyfuuu25.github.io
 
-Personal portfolio site for **Chi Leong Andy Fu** — live at
+Personal portfolio site for Chi Leong Andy Fu, live at
 <https://andyfuuu25.github.io/>.
 
 **All the content lives in [`content/site.toml`](content/site.toml). You never
@@ -19,7 +19,7 @@ edit HTML.** Change that file, run the build, push. That's the whole workflow.
 | Swap the photo | Drop the image in `assets/img/`, set `portrait = ` to its filename |
 | Remove a project | Delete its whole `[[work.projects]]` block |
 | Add a project | Copy an existing `[[work.projects]]` block and edit it |
-| Reorder projects | Move the blocks — page order follows file order |
+| Reorder projects | Move the blocks. Page order follows file order |
 | Edit a research note | Edit the markdown in `content/notes/` |
 | Add a research note | Add the markdown, then a `[[notes]]` block at the end of `site.toml` |
 
@@ -43,7 +43,7 @@ You don't need this computer. GitHub rebuilds the site itself on every push:
 
 1. Open `content/site.toml` on github.com
 2. Click the pencil icon, edit, hit **Commit changes**
-3. Wait ~1 minute — the Actions tab shows the build, then the site updates
+3. Wait about a minute. The Actions tab shows the build, then the site updates
 
 That works for the research notes in `content/notes/` too.
 
@@ -60,7 +60,7 @@ content/
 build.bat                double-click to rebuild
 tools/
   build.py               generates the HTML from content/
-index.html               GENERATED — do not edit, your changes get overwritten
+index.html               GENERATED. Do not edit; changes get overwritten
 research/
   summit-therapeutics.html   GENERATED
 assets/
@@ -71,8 +71,8 @@ assets/
 ```
 
 `index.html` and everything under `research/` are build output. Editing them
-by hand works until the next build, which silently overwrites your changes —
-so put the change in `content/` instead.
+by hand works until the next build, which silently overwrites your changes.
+Put the change in `content/` instead.
 
 ### Colours and type
 
@@ -98,7 +98,7 @@ python -m pip install markdown
 ```
 
 The build refuses to write anything if `site.toml` has a syntax error, and
-tells you the line — so a typo can't leave you with a half-broken site. It also
+tells you the line, so a typo can't leave you with a half-broken site. It also
 warns if you link to a file that isn't in the repo.
 
 ---

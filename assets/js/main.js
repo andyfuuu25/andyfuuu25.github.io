@@ -10,7 +10,7 @@
     toggle.addEventListener('click', function () {
       var current = root.getAttribute('data-theme');
       if (!current) {
-        // No explicit choice yet — flip away from whatever the OS is giving us.
+        // No explicit choice yet, so flip away from whatever the OS is giving us.
         var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         current = prefersDark ? 'dark' : 'light';
       }
