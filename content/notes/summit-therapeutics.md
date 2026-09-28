@@ -4,6 +4,8 @@
 
 **Date:** 24 September 2026 · **Analyst:** Chi Leong Andy Fu
 
+"Disclaimer: All research, company evaluations, and code repositories contained here were created independently for educational purposes during my time as a student. These reports represent historical academic exercises, are completely static, and are not actively maintained. They do not constitute investment advice and do not reflect the views, strategies, or opinions of my current employer."
+
 ---
 
 ## Bottom line
