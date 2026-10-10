@@ -269,6 +269,12 @@ def render_actions(site: dict, prefix: str = "") -> str:
     return f'<div class="actions">\n{out}\n</div>'
 
 
+def footer_note(site: dict) -> str:
+    """Optional site-wide disclaimer line, shown under the footer row."""
+    text = site.get("disclaimer")
+    return f'\n  <p class="footer__note">{md(text)}</p>' if text else ""
+
+
 # ------------------------------------------------------------- index page ---
 
 def build_index(cfg: dict) -> str:
@@ -427,7 +433,7 @@ def build_index(cfg: dict) -> str:
 
 <footer class="footer wrap">
   <span>© <span id="year">{date.today().year}</span> {md(site["name"])}</span>
-  <span>Built by hand. Hosted on GitHub Pages.</span>
+  <span>Built by hand. Hosted on GitHub Pages.</span>{footer_note(site)}
 </footer>
 
 <script src="assets/js/main.js"></script>
@@ -541,7 +547,7 @@ def build_note(cfg: dict, note: dict, i: int) -> tuple[Path, str]:
 
 <footer class="footer wrap">
   <span>© <span id="year">{date.today().year}</span> {md(site["name"])}</span>
-  <span><a href="{up}index.html">{e(site["url"].replace("https://", "").rstrip("/"))}</a></span>
+  <span><a href="{up}index.html">{e(site["url"].replace("https://", "").rstrip("/"))}</a></span>{footer_note(site)}
 </footer>
 
 <script src="{up}assets/js/main.js"></script>

@@ -28,6 +28,9 @@ description = "Andy Fu (Fu Chi Leong), MSc Finance at HKUST. Portfolio of quanti
 email    = "andyfu2021@gmail.com"
 linkedin = "https://www.linkedin.com/in/andy-fu-583a80264/"
 github   = "https://github.com/andyfuuu25"
+
+# Shown in the footer of every page.
+disclaimer = "Everything on this site is my own personal view, shared for educational purposes only. It is not investment advice, a recommendation, or an offer or solicitation to buy or sell any security, and it does not represent the views of any employer. I am not licensed by the SFC for any regulated activity."
 cv       = "assets/files/Andy_Fu_CV.pdf"    # put new CVs in assets/files/
 portrait = "assets/img/headshot.jpg"        # put new photos in assets/img/
 
@@ -124,7 +127,7 @@ actually priced on.
 """
 points = [
   "Most of the work is separating what the data proved from what it did not. HARMONi-2 is a China-only, interim, secondary-endpoint result in monotherapy. The two subgroups that matter most for Summit's own pivotal trial, PD-L1 1-49% and non-squamous, both still cross 1.",
-  "The call is Neutral, with the thresholds written down in advance: positive on a squamous final PFS HR at or below 0.70 that holds in Western patients, negative on a miss or a benefit confined to Asian sites. Stating what would change your mind *before* the readout is the part anyone can check afterwards.",
+  "The outlook is framed as scenarios, written down in advance: a squamous final PFS HR at or below 0.70 that holds in Western patients would be a strong reading, while a miss or a benefit confined to Asian sites would be a weak one. Stating what each result would mean *before* the readout is the part anyone can check afterwards.",
   "Every number ties back to one of **31 numbered sources**: company filings, the 10-Q going-concern language, trial registries, and the conference presentations themselves.",
 ]
 tags = ["Biotech valuation", "Clinical due diligence", "Catalyst mapping", "Equity research"]
@@ -138,19 +141,21 @@ links = [
 
 # ---------------------------------------------------------------------------
 [[work.projects]]
-title = "China Hongqiao (1378.HK): priced for the bear case"
+title = "China Hongqiao (1378.HK): aluminium and earnings outlook"
 kind  = "Equity research · Modelling"
 url   = "research/china-hongqiao.html"
 summary = """
 An investment memo and a linked quarterly three-statement model for China
 Hongqiao, a fully integrated aluminium producer. The shares fell
 about 50% from their March 2026 peak while 1H26 attributable profit rose 39%.
-The memo argues the market is pricing a governance discount, not the aluminium
-cycle, and rates the stock BUY with a HK$27.5 target.
+The memo sets out one reading: that the share price reflects a governance
+discount rather than the aluminium cycle. A dividend discount model gives a base-case
+value of HK$27.5 against a HK$20.72 price. An outlook memo for educational
+purposes, not investment advice and not a rating.
 """
 points = [
   "The valuation is a CAPM dividend discount model. Beta is 1.30 from a 60-month regression (t-statistic 5.9, R-squared 0.37), which gives a required return of 11.5%. Expected return is 44%, so alpha is about 33%.",
-  "Three scenarios are run through the same model. A bear case with SHFE aluminium back at 2025 levels (RMB20,000/t) cuts FY27E profit by 42%, yet the value of HK$18.7 is only 10% below the current price. That asymmetry carries the recommendation.",
+  "Three scenarios are run through the same model. A bear case with SHFE aluminium back at 2025 levels (RMB20,000/t) cuts FY27E profit by 42%, yet the value of HK$18.7 is only 10% below the current price. The gap between the base and bear cases is the central point.",
   "The controversies get their own section: a RMB10.2bn convertible bond, an A-share placement and related-party deals. If the 60% payout is held forever and retained cash earns nothing, the model returns HK$20.3, almost exactly today's price.",
   "The limitations section is written against the model. An R-squared of 0.37 means most return variance is idiosyncratic, a value stock would likely load on HML, and a 7.21% market premium instead of 6.0% cuts the value to HK$23.7. About 80% of the value sits in the terminal stage.",
 ]
@@ -373,8 +378,8 @@ description = "A post-WCLC review of Summit Therapeutics: HARMONi-2 is the first
 [[notes]]
 source   = "china-hongqiao.md"
 output   = "research/china-hongqiao.html"
-title    = "China Hongqiao (1378.HK): priced for the bear case, and paid to wait"
-description = "An investment memo on China Hongqiao: a CAPM dividend discount valuation gives HK$27.5 against a HK$20.72 share price, with bull, base and bear aluminium scenarios."
+title    = "China Hongqiao (1378.HK): aluminium and earnings outlook"
+description = "An investment memo on China Hongqiao: a CAPM dividend discount model gives a base-case value of HK$27.5 against a HK$20.72 share price, with bull, base and bear aluminium scenarios."
 
 [[notes]]
 source   = "aging-genes-arthropods.md"

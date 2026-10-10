@@ -1,10 +1,10 @@
 # SMMT: HARMONi-2 clears the Keytruda bar in China; the Western question is still open
 
-**Post-WCLC review** · **NEUTRAL VIEW** · Price ~$17.85 (approx., 20 Sep 2026) [28] · Market cap ~$14bn
+**Post-WCLC review** · **Outlook memo, no rating** · Price ~$17.85 (approx., 20 Sep 2026) [28] · Market cap ~$14bn
 
 **Date:** 24 September 2026 · **Analyst:** Chi Leong Andy Fu
 
-"Disclaimer: All research, company evaluations, and code repositories contained here were created independently for educational purposes during my time as a student. These reports represent historical academic exercises, are completely static, and are not actively maintained. They do not constitute investment advice and do not reflect the views, strategies, or opinions of my current employer."
+> **Disclaimer.** This note is my own personal view, written independently as an educational work sample. It is **not investment advice**, not a recommendation, and not an offer or solicitation to buy, sell or hold any security, and it carries no buy, sell or hold rating and no price target. It was not prepared for any client or employer, does not represent the views of any firm I work for or have worked for, and draws on no confidential information of any employer or client. I am not licensed by the Securities and Futures Commission (SFC) of Hong Kong for any regulated activity. Forecasts are estimates and may be wrong. Do your own research and consult a licensed adviser before making any investment decision.
 
 ---
 
@@ -14,7 +14,7 @@ WCLC delivered the best week of data ivonescimab has had. Akeso's HARMONi-2 beca
 
 Neither result answers the question Summit's value depends on: **does the benefit hold in Western patients, with chemotherapy on board, against pembrolizumab plus chemotherapy?** Only Summit's HARMONi-3 can answer that, and its squamous cohort already missed an interim look in April [12].
 
-After a ~44% move in 30 days [28], much of the good news is in the price. We stay Neutral into the HARMONi-3 squamous final PFS. The thresholds that would move us are in Section 4.
+After a ~44% move in 30 days [28], much of the good news appears to be in the price. The scenarios to watch into the HARMONi-3 squamous final PFS are set out in Section 4.
 
 ---
 
@@ -60,15 +60,15 @@ Other programmes include:
 
 | Number | Read | Why it matters |
 |---|---|---|
-| HARMONi-2 OS HR **0.73** (95% CI 0.57–0.95), p=0.009 [2] | **Good** | First OS win vs Keytruda for any PD-(L)1 x VEGF bispecific. Removes the class's biggest objection. |
-| Median OS **30.8 vs 22.6 months** (+8.2 months); 398 patients, 234 deaths [2] | **Good** | A large absolute gain in first-line NSCLC, from a mature dataset. |
-| PD-L1 ≥50% subgroup HR **0.58** (0.38–0.89) [2] | **Good** | Strongest signal. Maps directly onto Summit's HARMONi-7 (same mono-vs-mono design). |
+| HARMONi-2 OS HR **0.73** (95% CI 0.57–0.95), p=0.009 [2] | **Supportive** | First OS win vs Keytruda for any PD-(L)1 x VEGF bispecific. Removes the class's biggest objection. |
+| Median OS **30.8 vs 22.6 months** (+8.2 months); 398 patients, 234 deaths [2] | **Supportive** | A large absolute gain in first-line NSCLC, from a mature dataset. |
+| PD-L1 ≥50% subgroup HR **0.58** (0.38–0.89) [2] | **Supportive** | Strongest signal. Maps directly onto Summit's HARMONi-7 (same mono-vs-mono design). |
 | PD-L1 1–49% subgroup HR **0.85** (0.61–1.18) [2] | **Weak** | Interval crosses 1. HARMONi-3 enrols all PD-L1 levels, so this group matters more than the headline. |
 | Non-squamous subgroup HR **0.79** (0.55–1.14) [2] | **Weak** | Interval crosses 1. Non-squamous is HARMONi-3's larger cohort (1,000 of 1,600 patients) [15]. |
 | Squamous subgroup HR **0.65** (0.45–0.95) [2] | **Mixed** | Consistent with HARMONi-6 in China [19]. Yet the global HARMONi-3 squamous cohort missed its interim PFS [12]. |
 | Serious treatment-related AEs **29.9% vs 21.6%** [2] | **Watch** | Meaningfully more serious toxicity, partly from longer treatment (median 14 vs 10 cycles) [3]. A US prescriber will weigh this. |
-| Discontinuations for AEs **4.1% vs 5.0%**; immune-related AEs **34.0% vs 33.7%** [2] | **Good** | The extra toxicity isn't forcing patients off drug, and immune toxicity matches Keytruda. |
-| HARMONi June-26 ITT OS HR **0.76** (0.61–0.95), nominal p=0.0151 [3] | **Good** | The interval now excludes 1. Submitted to the FDA ahead of the PDUFA date [1]. |
+| Discontinuations for AEs **4.1% vs 5.0%**; immune-related AEs **34.0% vs 33.7%** [2] | **Supportive** | The extra toxicity isn't forcing patients off drug, and immune toxicity matches Keytruda. |
+| HARMONi June-26 ITT OS HR **0.76** (0.61–0.95), nominal p=0.0151 [3] | **Supportive** | The interval now excludes 1. Submitted to the FDA ahead of the PDUFA date [1]. |
 | HARMONi Western subgroup HR **0.76** (0.52–1.10) [3] | **Mixed** | Point estimate matches Asia, but on 165 patients the interval still spans 1 [1]. |
 | Both later HARMONi cuts are **ad hoc** [1] | **Bad** | The trial missed OS at its primary analysis (HR 0.79, p=0.057) [1]. Later nominal p-values can't change that statistically. |
 
@@ -129,12 +129,12 @@ There are two readings:
 
 China's squamous data are strong. HARMONi-6 showed a ~40% PFS advantage over tislelizumab plus chemotherapy [12] and a significant OS benefit [19]. HARMONi-2's squamous subgroup had an OS HR of 0.65 [2]. That makes the global miss harder to dismiss, not easier.
 
-**Our base case:** a statistically significant win at the final analysis, but with a smaller effect than in China. We expect a PFS HR nearer 0.75–0.80 than HARMONi-6's ~0.60. A benefit as large as China's would very likely have cleared even a strict interim bar.
+**The base case here:** a statistically significant win at the final analysis, but with a smaller effect than in China. This note expects a PFS HR nearer 0.75–0.80 than HARMONi-6's ~0.60. A benefit as large as China's would very likely have cleared even a strict interim bar.
 
 | Squamous final PFS | Read | Why |
 |---|---|---|
 | **HR ≤0.70**, consistent in Western patients | Clearly positive | China effect translates on a chemo backbone. Supports a large first-line opportunity. |
-| **HR ~0.75–0.85**, significant | Mixed | A win, but a modest one. Commercial debate shifts to pricing against Keytruda, which loses US exclusivity in 2028 [22]. Our most likely outcome. |
+| **HR ~0.75–0.85**, significant | Mixed | A win, but a modest one. Commercial debate shifts to pricing against Keytruda, which loses US exclusivity in 2028 [22]. The most likely outcome in this note. |
 | **Miss**, or benefit driven only by Asian sites | Clearly negative | Undercuts the translation thesis ahead of the non-squamous readout. |
 
 ## 5. Balance sheet and financing
@@ -144,8 +144,8 @@ China's squamous data are strong. HARMONi-6 showed a ~40% PFS advantage over tis
 | Cash + ST investments **$690.7m** (30 Jun 2026), no debt [4][6] | **Tight** | The 10-Q states cash is not sufficient to fund planned operations for 12 months (going-concern language) [5]. |
 | Operating cash use **~$140m** in Q2 [6]; **$263.4m** in 1H26 [5] | **Rising** | Roughly five quarters of cash at the current rate. |
 | GAAP opex **$220.5m** in Q2, up 13% on Q1 [6]; non-GAAP **$151.8m** vs **$122.4m** in Q1 [6] | **Expected, but costly** | Driven by HARMONi-3, HARMONi-7 and HARMONi-GI3 [6], with HARMONi-GU1 still to come [16]. |
-| ATM: **$230.8m** raised in Q2, **$68.4m** after quarter-end [4], plus a new **$380m** facility [6] | **Bad for holders** | Summit is funding itself by selling stock into the market. Ongoing dilution is an overhang. |
-| October 2025 PIPE: insiders **$272m** at **$18.74**, Akeso **$10m** [27] | **Good** | Management bought at roughly today's price. |
+| ATM: **$230.8m** raised in Q2, **$68.4m** after quarter-end [4], plus a new **$380m** facility [6] | **Dilutive** | Summit is funding itself by selling stock into the market. Ongoing dilution is an overhang. |
+| October 2025 PIPE: insiders **$272m** at **$18.74**, Akeso **$10m** [27] | **Supportive** | Management bought at roughly today's price. |
 | Duggan stake **~75%** [11] | **Double-edged** | A committed funder and stable control, but a small float amplifies moves, and any deal happens on his terms. |
 
 Financing risk is manageable but not free. Until approval or a partnership, the ATM is the funding source, and every rally doubles as a selling window.
@@ -158,10 +158,10 @@ At ~$14bn, investors are not paying for the second-line EGFR label, which is a s
 
 Sell-side views are split. Jefferies upgraded to Buy with a $25 target ahead of the HARMONi-3 readout [29], while Barclays remains at Hold [30].
 
-**View: Neutral.** The data are better than they were a month ago, but the stock has moved with them, and the ATM is supplying new shares into the strength.
+**Outlook.** The data are better than they were a month ago, but the stock has moved with them, and the ATM is supplying new shares into the strength.
 
-- **We turn positive** on a squamous final PFS HR ≤0.70 with a Western subgroup pointing the same way.
-- **We turn negative** on a squamous miss, a benefit confined to Asian sites, or a CRL citing lack of significant OS.
+- **A stronger outlook** would follow a squamous final PFS HR ≤0.70 with a Western subgroup pointing the same way.
+- **A weaker outlook** would follow a squamous miss, a benefit confined to Asian sites, or a CRL citing lack of significant OS.
 
 ## 7. What to watch
 

@@ -614,6 +614,12 @@ img { max-width: 100%; height: auto; display: block; }
   align-items: center;
 }
 
+.footer__note {
+  flex-basis: 100%;
+  margin: 0;
+  line-height: 1.55;
+}
+
 /* ------------------------------------------------------- reveal anim --- */
 
 .reveal {
