@@ -21,7 +21,7 @@ url        = "https://andyfuuu25.github.io/"
 
 # Browser tab title and the description search engines show.
 page_title  = "Andy Fu | Quantitative Research and Finance"
-description = "Andy Fu (Fu Chi Leong), incoming MSc Finance at HKUST. Portfolio of quantitative research tools, equity research and simulation projects."
+description = "Andy Fu (Fu Chi Leong), MSc Finance at HKUST. Portfolio of quantitative research tools, equity research and simulation projects."
 
 # Contact + files. To swap your CV or photo, drop the new file in the folder
 # shown and update the filename here.
@@ -38,7 +38,7 @@ portrait = "assets/img/headshot.jpg"        # put new photos in assets/img/
 
 [hero]
 tagline = """
-Incoming MSc Finance at HKUST. I build quantitative research tools:
+MSc Finance at HKUST. I build quantitative research tools:
 factor models, Monte Carlo simulators and valuation engines.
 """
 
@@ -138,6 +138,30 @@ links = [
 
 # ---------------------------------------------------------------------------
 [[work.projects]]
+title = "China Hongqiao (1378.HK): priced for the bear case"
+kind  = "Equity research · Modelling"
+url   = "research/china-hongqiao.html"
+summary = """
+An investment memo and a linked quarterly three-statement model for China
+Hongqiao, a fully integrated aluminium producer. The shares fell
+about 50% from their March 2026 peak while 1H26 attributable profit rose 39%.
+The memo argues the market is pricing a governance discount, not the aluminium
+cycle, and rates the stock BUY with a HK$27.5 target.
+"""
+points = [
+  "The valuation is a CAPM dividend discount model. Beta is 1.30 from a 60-month regression (t-statistic 5.9, R-squared 0.37), which gives a required return of 11.5%. Expected return is 44%, so alpha is about 33%.",
+  "Three scenarios are run through the same model. A bear case with SHFE aluminium back at 2025 levels (RMB20,000/t) cuts FY27E profit by 42%, yet the value of HK$18.7 is only 10% below the current price. That asymmetry carries the recommendation.",
+  "The controversies get their own section: a RMB10.2bn convertible bond, an A-share placement and related-party deals. If the 60% payout is held forever and retained cash earns nothing, the model returns HK$20.3, almost exactly today's price.",
+  "The limitations section is written against the model. An R-squared of 0.37 means most return variance is idiosyncratic, a value stock would likely load on HML, and a 7.21% market premium instead of 6.0% cuts the value to HK$23.7. About 80% of the value sits in the terminal stage.",
+]
+tags = ["CAPM", "Dividend discount model", "Three-statement model", "Commodities", "Equity research"]
+links = [
+  { label = "Read the full memo", href = "research/china-hongqiao.html" },
+  { label = "Download the PDF", href = "assets/files/Andy_Fu_Hongqiao_Investment_Memo.pdf" },
+]
+
+# ---------------------------------------------------------------------------
+[[work.projects]]
 title = "Aging genes in arthropods: a structured literature review"
 kind  = "Research · Capstone"
 url   = "research/aging-genes-arthropods.html"
@@ -190,6 +214,18 @@ label = "Experience"
 title = "Where I've worked"
 
 [[experience.items]]
+role = "Equity Research Analyst Intern"
+org  = "Kingstone International Advisors Limited"
+date = "Oct 2026 - Present"
+points = [
+  "Cover US equities in targeted sectors: fundamental analysis and review of SEC filings.",
+  "Build **DCF and comparable-company models** to support initiation notes and investment decks.",
+  "Pitch stock ideas to inform portfolio holdings and re-evaluate existing positions for under- or outperformance.",
+  "Track SFC rule updates, monitor holdings against concentration limits, and maintain audit-ready trade records and bookkeeping across client accounts. Automate recurring compliance and reporting in Excel VBA and Python.",
+  "Working towards SFC licensing for Type 1, 4 and 9 Regulated Activities (registered for HKSI exams).",
+]
+
+[[experience.items]]
 role = "Undergraduate Research Assistant"
 org  = "HKU Faculty of Science"
 date = "Sep-Dec 2025"
@@ -211,7 +247,7 @@ points = [
 ]
 
 [[experience.items]]
-role = "Market Research Analyst Intern"
+role = "Analytics Intern"
 org  = "Mekong Tours Hong Kong"
 date = "Jun-Aug 2022"
 points = [
@@ -233,11 +269,13 @@ title = "Markets, under a clock"
 [[competitions.items]]
 role = "Bloomberg Global Trading Challenge"
 org  = "Team lead, 5 people"
-date = "2025"
+date = "2025 - 2026"
 points = [
   "Managed a **$1M virtual portfolio** over five weeks, finishing in the **72nd percentile globally** (rank 758).",
   "Designed and executed a quantitative, factor-based strategy on the Bloomberg Terminal, screening systematically for growth, momentum, and high/low-beta defensive positions.",
+  "Executed **39 long positions** across 36 US and Taiwan equities around an AI-infrastructure thesis (semiconductors, data storage, connectivity hardware), with a smaller defensive sleeve in staples, healthcare and energy. Best performers included Western Digital (+20.6%) and NVIDIA (+13.0%).",
   "Mitigated downside with volatility-adjusted trailing stops and a **net beta-neutral** book to stabilise weekly performance.",
+  "Registered for the 2026 challenge (results pending).",
 ]
 
 [[competitions.items]]
@@ -295,12 +333,12 @@ title = "Background"
 
 [[education.items]]
 school = "The Hong Kong University of Science and Technology"
-detail = "MSc Finance, offer accepted for the Fall 2026 cohort"
-date   = "Sep 2026 - Nov 2027"
+detail = "MSc Finance"
+date   = "Sep 2026 - Dec 2027"
 
 [[education.items]]
 school = "The University of Hong Kong"
-detail = "BSc Molecular Biology & Biotechnology · Exchange: Universität Konstanz, Germany · Volleyball and softball teams"
+detail = "BSc Molecular Biology & Biotechnology, Second Upper Class Honours · Exchange: Universität Konstanz, Germany · Volleyball and softball teams"
 date   = "Sep 2021 - Jul 2026"
 
 
@@ -331,6 +369,12 @@ description = "A post-WCLC review of Summit Therapeutics: HARMONi-2 is the first
 # Images referenced in the markdown are mapped to files in assets/img/ here.
 [notes.images]
 "exhibit1_harmoni_os_v2.png" = "../assets/img/smmt-exhibit1.jpg"
+
+[[notes]]
+source   = "china-hongqiao.md"
+output   = "research/china-hongqiao.html"
+title    = "China Hongqiao (1378.HK): priced for the bear case, and paid to wait"
+description = "An investment memo on China Hongqiao: a CAPM dividend discount valuation gives HK$27.5 against a HK$20.72 share price, with bull, base and bear aluminium scenarios."
 
 [[notes]]
 source   = "aging-genes-arthropods.md"

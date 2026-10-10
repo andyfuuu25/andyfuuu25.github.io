@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Andy Fu | Quantitative Research and Finance</title>
-<meta name="description" content="Andy Fu (Fu Chi Leong), incoming MSc Finance at HKUST. Portfolio of quantitative research tools, equity research and simulation projects.">
+<meta name="description" content="Andy Fu (Fu Chi Leong), MSc Finance at HKUST. Portfolio of quantitative research tools, equity research and simulation projects.">
 <meta name="author" content="Chi Leong Andy Fu">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Andy Fu | Quantitative Research and Finance">
-<meta property="og:description" content="Andy Fu (Fu Chi Leong), incoming MSc Finance at HKUST. Portfolio of quantitative research tools, equity research and simulation projects.">
+<meta property="og:description" content="Andy Fu (Fu Chi Leong), MSc Finance at HKUST. Portfolio of quantitative research tools, equity research and simulation projects.">
 <meta property="og:url" content="https://andyfuuu25.github.io/">
 <meta property="og:image" content="https://andyfuuu25.github.io/assets/img/headshot.jpg">
 <meta name="twitter:card" content="summary">
@@ -60,7 +60,7 @@
       <div>
         <span class="hero__eyebrow">Hong Kong</span>
         <h1 class="hero__name">Chi Leong Andy Fu</h1>
-        <p class="hero__tagline">Incoming MSc Finance at HKUST. I build quantitative research tools: factor models, Monte Carlo simulators and valuation engines.</p>
+        <p class="hero__tagline">MSc Finance at HKUST. I build quantitative research tools: factor models, Monte Carlo simulators and valuation engines.</p>
         <div class="hero__bio"><p>I came to finance from molecular biology, which turns out to be a useful place to start. Both fields ask the same question: how do you estimate something you cannot measure directly, and how honest are you about the error bars? I write the code myself, test it against what actually happened, and document what the model cannot see. Most of my work sits between healthcare and capital markets. A clinical trial readout and a cash flow statement are not that different to read.</p></div>
         <div class="actions">
           <a class="btn btn--primary" href="mailto:andyfu2021@gmail.com">
@@ -157,6 +157,25 @@
 
         <article class="card reveal">
           <div class="card__head">
+            <h3 class="card__title"><a href="research/china-hongqiao.html">China Hongqiao (1378.HK): priced for the bear case</a></h3>
+            <span class="card__kind">Equity research · Modelling</span>
+          </div>
+          <div class="card__body"><p>An investment memo and a linked quarterly three-statement model for China Hongqiao, a fully integrated aluminium producer. The shares fell about 50% from their March 2026 peak while 1H26 attributable profit rose 39%. The memo argues the market is pricing a governance discount, not the aluminium cycle, and rates the stock BUY with a HK$27.5 target.</p></div>
+          <ul class="card__points">
+            <li>The valuation is a CAPM dividend discount model. Beta is 1.30 from a 60-month regression (t-statistic 5.9, R-squared 0.37), which gives a required return of 11.5%. Expected return is 44%, so alpha is about 33%.</li>
+            <li>Three scenarios are run through the same model. A bear case with SHFE aluminium back at 2025 levels (RMB20,000/t) cuts FY27E profit by 42%, yet the value of HK$18.7 is only 10% below the current price. That asymmetry carries the recommendation.</li>
+            <li>The controversies get their own section: a RMB10.2bn convertible bond, an A-share placement and related-party deals. If the 60% payout is held forever and retained cash earns nothing, the model returns HK$20.3, almost exactly today&#x27;s price.</li>
+            <li>The limitations section is written against the model. An R-squared of 0.37 means most return variance is idiosyncratic, a value stock would likely load on HML, and a 7.21% market premium instead of 6.0% cuts the value to HK$23.7. About 80% of the value sits in the terminal stage.</li>
+          </ul>
+          <ul class="tags"><li>CAPM</li><li>Dividend discount model</li><li>Three-statement model</li><li>Commodities</li><li>Equity research</li></ul>
+          <div class="card__links">
+            <a href="research/china-hongqiao.html">Read the full memo</a>
+            <a href="assets/files/Andy_Fu_Hongqiao_Investment_Memo.pdf">Download the PDF</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__head">
             <h3 class="card__title"><a href="research/aging-genes-arthropods.html">Aging genes in arthropods: a structured literature review</a></h3>
             <span class="card__kind">Research · Capstone</span>
           </div>
@@ -206,6 +225,19 @@
       <ol class="timeline">
         <li class="timeline__item reveal">
           <div class="timeline__head">
+            <h3 class="timeline__role">Equity Research Analyst Intern <span class="timeline__org">· Kingstone International Advisors Limited</span></h3>
+            <span class="timeline__date">Oct 2026 - Present</span>
+          </div>
+          <ul class="timeline__points">
+            <li>Cover US equities in targeted sectors: fundamental analysis and review of SEC filings.</li>
+            <li>Build <strong>DCF and comparable-company models</strong> to support initiation notes and investment decks.</li>
+            <li>Pitch stock ideas to inform portfolio holdings and re-evaluate existing positions for under- or outperformance.</li>
+            <li>Track SFC rule updates, monitor holdings against concentration limits, and maintain audit-ready trade records and bookkeeping across client accounts. Automate recurring compliance and reporting in Excel VBA and Python.</li>
+            <li>Working towards SFC licensing for Type 1, 4 and 9 Regulated Activities (registered for HKSI exams).</li>
+          </ul>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
             <h3 class="timeline__role">Undergraduate Research Assistant <span class="timeline__org">· HKU Faculty of Science</span></h3>
             <span class="timeline__date">Sep-Dec 2025</span>
           </div>
@@ -229,7 +261,7 @@
         </li>
         <li class="timeline__item reveal">
           <div class="timeline__head">
-            <h3 class="timeline__role">Market Research Analyst Intern <span class="timeline__org">· Mekong Tours Hong Kong</span></h3>
+            <h3 class="timeline__role">Analytics Intern <span class="timeline__org">· Mekong Tours Hong Kong</span></h3>
             <span class="timeline__date">Jun-Aug 2022</span>
           </div>
           <ul class="timeline__points">
@@ -253,12 +285,14 @@
         <li class="timeline__item reveal">
           <div class="timeline__head">
             <h3 class="timeline__role">Bloomberg Global Trading Challenge <span class="timeline__org">· Team lead, 5 people</span></h3>
-            <span class="timeline__date">2025</span>
+            <span class="timeline__date">2025 - 2026</span>
           </div>
           <ul class="timeline__points">
             <li>Managed a <strong>$1M virtual portfolio</strong> over five weeks, finishing in the <strong>72nd percentile globally</strong> (rank 758).</li>
             <li>Designed and executed a quantitative, factor-based strategy on the Bloomberg Terminal, screening systematically for growth, momentum, and high/low-beta defensive positions.</li>
+            <li>Executed <strong>39 long positions</strong> across 36 US and Taiwan equities around an AI-infrastructure thesis (semiconductors, data storage, connectivity hardware), with a smaller defensive sleeve in staples, healthcare and energy. Best performers included Western Digital (+20.6%) and NVIDIA (+13.0%).</li>
             <li>Mitigated downside with volatility-adjusted trailing stops and a <strong>net beta-neutral</strong> book to stabilise weekly performance.</li>
+            <li>Registered for the 2026 challenge (results pending).</li>
           </ul>
         </li>
         <li class="timeline__item reveal">
@@ -323,15 +357,15 @@
         <li class="edu__item reveal">
           <div>
             <h3 class="edu__school">The Hong Kong University of Science and Technology
-              <span class="edu__degree">MSc Finance, offer accepted for the Fall 2026 cohort</span>
+              <span class="edu__degree">MSc Finance</span>
             </h3>
           </div>
-          <span class="edu__date">Sep 2026 - Nov 2027</span>
+          <span class="edu__date">Sep 2026 - Dec 2027</span>
         </li>
         <li class="edu__item reveal">
           <div>
             <h3 class="edu__school">The University of Hong Kong
-              <span class="edu__degree">BSc Molecular Biology &amp; Biotechnology · Exchange: Universität Konstanz, Germany · Volleyball and softball teams</span>
+              <span class="edu__degree">BSc Molecular Biology &amp; Biotechnology, Second Upper Class Honours · Exchange: Universität Konstanz, Germany · Volleyball and softball teams</span>
             </h3>
           </div>
           <span class="edu__date">Sep 2021 - Jul 2026</span>
